@@ -18,6 +18,8 @@
       <!-- Switch fails : [Vue warn]: Do not use built-in or reserved HTML elements as component id: Switch -->
       <h5> ListView </h5>
       <ListView :items="items" valueProp="key" labelProp="label" seperatorColor="blue" />
+      <h5> ScrollView </h5>
+      <ScrollView orientation="horizontal" />
     </StackLayout>
   </Page>
 </template>
@@ -31,6 +33,7 @@ import ActivityIndicator from '../components/shared/ActivityIndicator';
 import Slider from '../components/shared/Slider';
 import Switch from '../components/shared/Switch';
 import ListView from '../components/shared/ListView';
+import ScrollView from '../components/shared/ScrollView';
 
 export default {
   name: 'home',
@@ -76,6 +79,7 @@ export default {
     Slider,
     Switch,
     ListView,
+    ScrollView,
   },
 };
 </script>
