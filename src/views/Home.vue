@@ -20,6 +20,12 @@
       <ListView :items="items" valueProp="key" labelProp="label" seperatorColor="blue" />
       <h5> ScrollView </h5>
       <ScrollView orientation="horizontal" />
+      <h5> Progress </h5>
+      <Progress :value="50" />
+      <h5> SearchBar </h5>
+      <SearchBar :model="search" :maxlength="10" keyboardType="text" />
+      <h5> DatePicker </h5>
+      <DatePicker :dateChange="dateChange" :model="date" />
     </StackLayout>
   </Page>
 </template>
@@ -34,6 +40,9 @@ import Slider from '../components/shared/Slider';
 import Switch from '../components/shared/Switch';
 import ListView from '../components/shared/ListView';
 import ScrollView from '../components/shared/ScrollView';
+import Progress from '../components/shared/Progress';
+import SearchBar from '../components/shared/SearchBar';
+import DatePicker from '../components/shared/DatePicker';
 
 export default {
   name: 'home',
@@ -63,12 +72,18 @@ export default {
       },
       sliderVal: 40,
       text: '',
+      search: '',
+      date: '',
     };
   },
   methods: {
     sliderChange: function (event) {
       console.log(event.target.value);
       this.sliderVal = event.target.value;
+    },
+    dateChange: function (event) {
+      this.date = event.target.value;
+      console.log(this.date);
     },
   },
   components: {
@@ -80,6 +95,9 @@ export default {
     Switch,
     ListView,
     ScrollView,
+    Progress,
+    SearchBar,
+    DatePicker,
   },
 };
 </script>
