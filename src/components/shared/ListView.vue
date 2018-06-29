@@ -2,7 +2,7 @@
     <div>
         <div v-for="item in items" v-bind:key="item[valueProp]">
             <Label :text="item[labelProp]" />
-            <hr style="background-color: red; height: 1px; border: 0;" />
+            <hr :style="separatorStyle" />
         </div>
     </div>
 </template>
@@ -16,6 +16,14 @@ export default {
         'valueProp',
         'labelProp',
     ],
+    data () {
+        return {
+            separatorStyle: '',      
+        };
+    },
+    mounted () {
+        this.separatorStyle = `background-color: ${this.separatorColor}; height: 1px; border: 0;`;
+    },
 };
 </script>
 

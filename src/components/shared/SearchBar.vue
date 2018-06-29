@@ -1,7 +1,6 @@
 <template>
     <div class="searchBarContainer">
         <img src="https://image.flaticon.com/icons/png/128/61/61088.png" class="material-icons" />
-        <!-- SearchBar can include TextField.. <input :model="model" hint="search smt..." class="searchBar" /> -->
         <TextField class="searchBar" text="search" :maxlength="maxlength" :model="model" :type="keyboardType" />
     </div>
 </template>

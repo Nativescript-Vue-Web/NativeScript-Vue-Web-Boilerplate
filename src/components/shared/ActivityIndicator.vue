@@ -9,7 +9,7 @@ export default {
     name: 'ActivityIndicator',
     props: [
         'busy',
-        'onBusyChange', // an event.
+        'busyChange', // an event.
     ],
 };
 </script>
