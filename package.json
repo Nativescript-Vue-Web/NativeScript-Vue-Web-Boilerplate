@@ -19,7 +19,7 @@
   "dependencies": {
     "nativescript-theme-core": "1.0.4",
     "nativescript-vue": "1.3.1",
-    "nativescript-vue-web": "git://github.com/Nativescript-Vue-Web/Nativescript-Vue-Web.git#development",
+    "nativescript-vue-web": "../Nativescript-Vue-Web",
     "register-service-worker": "1.2.0",
     "tns-core-modules": "4.0.0",
     "vue": "2.5.16",
@@ -90,7 +90,23 @@
       "import/extensions": 0,
       "global-require": 0,
       "eol-last": 0,
-      "max-len": ["error", {"code": 250}]
+      "max-len": ["error", {"code": 250}],
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
     }
   },
   "postcss": {
