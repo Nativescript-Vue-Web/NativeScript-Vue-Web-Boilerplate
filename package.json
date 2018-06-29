@@ -17,13 +17,14 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "register-service-worker": "1.2.0",
-    "vue": "2.5.16",
-    "vue-router": "3.0.1",
-    "vuex": "3.0.1",
     "nativescript-theme-core": "1.0.4",
     "nativescript-vue": "1.3.1",
-    "tns-core-modules": "4.0.0"
+    "nativescript-vue-web": "git://github.com/Nativescript-Vue-Web/Nativescript-Vue-Web.git#development",
+    "register-service-worker": "1.2.0",
+    "tns-core-modules": "4.0.0",
+    "vue": "2.5.16",
+    "vue-router": "3.0.1",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.0.0-beta.9",
@@ -88,7 +89,8 @@
     "rules": {
       "import/extensions": 0,
       "global-require": 0,
-      "eol-last": 0
+      "eol-last": 0,
+      "max-len": ["error", {"code": 250}]
     }
   },
   "postcss": {

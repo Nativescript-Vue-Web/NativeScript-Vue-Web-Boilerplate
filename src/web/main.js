@@ -1,17 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import { Button, Label, Img, StackLayout, Page } from 'nativescript-vue-web';
 
 import App from './App';
 import router from '../router';
 import store from '../store';
 import './registerServiceWorker';
-
-import Button from '../components/shared/Button';
-import Label from '../components/shared/Label';
-import Img from '../components/shared/Img';
-import StackLayout from '../components/shared/StackLayout';
-import Page from '../components/shared/Page';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);

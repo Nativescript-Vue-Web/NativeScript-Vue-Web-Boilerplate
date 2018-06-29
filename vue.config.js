@@ -1,6 +1,6 @@
 /* eslint no-param-reassign:0 import/no-extraneous-dependencies:0 */
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const winston = require('winston-color');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
