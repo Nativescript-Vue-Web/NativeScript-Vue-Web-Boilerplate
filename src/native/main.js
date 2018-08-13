@@ -18,6 +18,6 @@ const storeInstance = new Vuex.Store(store);
 Vue.prototype.$store = storeInstance;
 
 new Vue({
-  router,
-  store: storeInstance,
+    router,
+    store: storeInstance,
 }).$start();

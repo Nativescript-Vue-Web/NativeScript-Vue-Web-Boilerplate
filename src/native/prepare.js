@@ -12,33 +12,33 @@ const appPackage = require('../../package.json');
 const tplPackage = require('../../template/package.json');
 
 function copyNativeScriptPlugins() {
-  winston.info('Copying NativeScript plugins to template dependencies...');
-  const plugins = Object.keys(appPackage.dependencies)
-    .filter(key => key.indexOf('nativescript-') !== -1)
-    .reduce((obj, key) => {
+    winston.info('Copying NativeScript plugins to template dependencies...');
+    const plugins = Object.keys(appPackage.dependencies)
+        .filter(key => key.indexOf('nativescript-') !== -1)
+        .reduce((obj, key) => {
       obj[key] = appPackage.dependencies[key]; // eslint-disable-line
-      return obj;
-    }, {});
-  Object.assign(tplPackage.dependencies, plugins);
-  fs.writeFileSync(`${tplPath}/package.json`, JSON.stringify(tplPackage, null, 2));
+            return obj;
+        }, {});
+    Object.assign(tplPackage.dependencies, plugins);
+    fs.writeFileSync(`${tplPath}/package.json`, JSON.stringify(tplPackage, null, 2));
 }
 
 function updateDistFromTemplate() {
-  winston.info('Preparing NativeScript application from template...');
-  fs.ensureDirSync(distPath);
-  fs.copySync(tplPath, distPath, { overwrite: false });
-  execSync('npm i', { cwd: 'dist' });
+    winston.info('Preparing NativeScript application from template...');
+    fs.ensureDirSync(distPath);
+    fs.copySync(tplPath, distPath, { overwrite: false });
+    execSync('npm i', { cwd: 'dist' });
 }
 
 function copyPackageIntoApp() {
-  winston.info('Copying packaged files into app...');
-  fs.ensureDirSync(packagePath);
-  fs.copySync(packagePath, appPath, { overwrite: false });
-  fs.removeSync(packagePath);
+    winston.info('Copying packaged files into app...');
+    fs.ensureDirSync(packagePath);
+    fs.copySync(packagePath, appPath, { overwrite: false });
+    fs.removeSync(packagePath);
 }
 
 module.exports = {
-  copyNativeScriptPlugins,
-  updateDistFromTemplate,
-  copyPackageIntoApp,
+    copyNativeScriptPlugins,
+    updateDistFromTemplate,
+    copyPackageIntoApp,
 };

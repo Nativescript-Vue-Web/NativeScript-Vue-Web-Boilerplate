@@ -1,25 +1,25 @@
 import { INCREMENT, DECREMENT } from '../mutation-types';
 
 const initialState = {
-  count: 0,
+    count: 0,
 };
 
 const mutations = {
-  [DECREMENT](state) {
+    [DECREMENT](state) {
     state.count -= 1; // eslint-disable-line
-  },
-  [INCREMENT](state) {
+    },
+    [INCREMENT](state) {
     state.count += 1; // eslint-disable-line
-  },
+    },
 };
 
 const actions = {
-  [INCREMENT]: ({ commit }) => commit(INCREMENT),
-  [DECREMENT]: ({ commit }) => commit(DECREMENT),
+    [INCREMENT]: ({ commit }) => commit(INCREMENT),
+    [DECREMENT]: ({ commit }) => commit(DECREMENT),
 };
 
 export default {
-  state: initialState,
-  mutations,
-  actions,
+    state: initialState,
+    mutations,
+    actions,
 };

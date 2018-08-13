@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: ['msg'],
+    name: 'HelloWorld',
+    props: ['msg'],
 };
 </script>
 
