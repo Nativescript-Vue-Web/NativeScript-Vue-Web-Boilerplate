@@ -28,7 +28,7 @@
                     :editable="true"
                     height="120"
                     width="120"
-                    backgroundColor="red" 
+                    backgroundColor="red"
                 />
                 <TextField
                     alignSelf="flex-end"
@@ -42,7 +42,7 @@
                     :editable="true"
                     height="120"
                     width="120"
-                    backgroundColor="red" 
+                    backgroundColor="red"
                 />
                 <TextField
                     alignSelf="flex-start"
@@ -56,7 +56,7 @@
                     :editable="true"
                     height="120"
                     width="120"
-                    backgroundColor="red" 
+                    backgroundColor="red"
                 />
             </FlexboxLayout>
 
@@ -137,9 +137,27 @@ import HelloWorld from '@/components/HelloWorld';
 import {
     TextField,
     TextView,
+    TimePicker,
+    ListPicker,
+    ActivityIndicator,
+    Slider,
+    Switcher,
+    ListView,
+    HtmlView,
+    WebView,
+    Progress,
+    SearchBar,
+    DatePicker,
+    SegmentedBar,
+    SegmentedBarItem,
+    AbsoluteLayout,
+    DockLayout,
     FlexboxLayout,
+    GridLayout,
+    WrapLayout,
+    Span,
+    FormattedString,
 } from 'nativescript-vue-web';
-import MyWrapper from '../components/MyWrapper';
 
 export default {
     name: 'home',
@@ -187,10 +205,6 @@ export default {
         }, 5000);
     },
     methods: {
-        // MyWrapper Event
-        myWrapperOnChange(event) {
-            console.log('MyWrapper onChange event ', event);
-        },
         // WebView Event
         webViewLoadStarted(event) {
             console.log('WebView Loading Started');
@@ -270,7 +284,6 @@ export default {
         },
     },
     components: {
-        MyWrapper,
         HelloWorld,
         TextField,
         TextView,
