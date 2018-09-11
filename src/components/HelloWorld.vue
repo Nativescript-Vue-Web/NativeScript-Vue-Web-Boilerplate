@@ -5,11 +5,14 @@
 </template>
 
 <script>
+import { StackLayout, Label } from 'nativescript-vue-web';
+
 export default {
-    name: 'HelloWorld',
-    props: ['msg'],
+  name: 'HelloWorld',
+  props: ['msg'],
+  components: {
+    StackLayout,
+    Label,
+  },
 };
 </script>
-
-<style scoped lang="scss">
-</style>
