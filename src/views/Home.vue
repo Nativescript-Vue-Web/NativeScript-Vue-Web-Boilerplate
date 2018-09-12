@@ -206,80 +206,80 @@ export default {
   methods: {
     // WebView Event
     webViewLoadStarted() {
-      console.log('WebView Loading Started'); // eslint-disable-next-line
+      console.log('WebView Loading Started'); // eslint-disable-line
     },
     webViewLoadFinished() {
-      console.log('WebView Loading finished.'); // eslint-disable-next-line
+      console.log('WebView Loading finished.'); // eslint-disable-line
     },
     // List Events
     listPickerSelectedIndexChange() {
-      console.log(this.selectedIndex); // eslint-disable-next-line
-      console.log(this.items[this.selectedIndex].label); // eslint-disable-next-line
-      console.log('Selected index changed in the list picker'); // eslint-disable-next-line
+      console.log(this.selectedIndex); // eslint-disable-line
+      console.log(this.items[this.selectedIndex].label); // eslint-disable-line
+      console.log('Selected index changed in the list picker'); // eslint-disable-line
     },
     listViewItemTap(item) {
-      console.log(`Item : ${JSON.stringify(item)} tapped in the listview.`); // eslint-disable-next-line
+      console.log(`Item : ${JSON.stringify(item)} tapped in the listview.`); // eslint-disable-line
     },
     // TextField Events
     textFieldOnBlur() {
-      console.log('TextField/TextView onBlur event!'); // eslint-disable-next-line
+      console.log('TextField/TextView onBlur event!'); // eslint-disable-line
     },
     textFieldfocus() {
-      console.log('TextField/TextView focus event!'); // eslint-disable-next-line
+      console.log('TextField/TextView focus event!'); // eslint-disable-line
     },
     textfieldOnInput(event) {
-      console.log('textfieldOnInput '); // eslint-disable-next-line
-      console.log(event); // eslint-disable-next-line
-      console.log('----'); // eslint-disable-next-line
+      console.log('textfieldOnInput '); // eslint-disable-line
+      console.log(event); // eslint-disable-line
+      console.log('----'); // eslint-disable-line
     },
     textFieldreturnPress() {
-      console.log('TextField/TextView returnPress event'); // eslint-disable-next-line
-      console.log(this.textFieldInput); // eslint-disable-next-line
+      console.log('TextField/TextView returnPress event'); // eslint-disable-line
+      console.log(this.textFieldInput); // eslint-disable-line
     },
     textFieldtextChange() {
-      console.log('TextField/TextView textChange event'); // eslint-disable-next-line
-      console.log(this.textFieldInput); // eslint-disable-next-line
+      console.log('TextField/TextView textChange event'); // eslint-disable-line
+      console.log(this.textFieldInput); // eslint-disable-line
     },
     // DatePicker Event
     dateChange() {
-      console.log('DatePicker dateChange event'); // eslint-disable-next-line
-      console.log(this.date); // eslint-disable-next-line
+      console.log('DatePicker dateChange event'); // eslint-disable-line
+      console.log(this.date); // eslint-disable-line
     },
     // TimePicker Event
     timeChange() {
-      console.log(this.time); // eslint-disable-next-line
+      console.log(this.time); // eslint-disable-line
     },
     // Slider Event
     sliderChange(event) {
-      console.log(event.target.value); // eslint-disable-next-line
+      console.log(event.target.value); // eslint-disable-line
       this.sliderVal = event.target.value;
     },
     // Switch Event
     switchChange() {
-      console.log('Switch checkedChange event.'); // eslint-disable-next-line
-      console.log(this.switchVal); // eslint-disable-next-line
+      console.log('Switch checkedChange event.'); // eslint-disable-line
+      console.log(this.switchVal); // eslint-disable-line
     },
     // Progress Events
     progressvalueChange() {
-      // console.log(`Progress bar value changed to ${event}`); // eslint-disable-next-line
+      // console.log(`Progress bar value changed to ${event}`); // eslint-disable-line
     },
     // ScrollView Events
     scroll() {
-      console.log('ScrollView scroll event !'); // eslint-disable-next-line
+      console.log('ScrollView scroll event !'); // eslint-disable-line
     },
     // SearchBar Events
     searchBartextChange() {
-      console.log('SearchBar textChange event'); // eslint-disable-next-line
+      console.log('SearchBar textChange event'); // eslint-disable-line
     },
     searchBarsubmit() {
-      console.log('SearchBar submit event'); // eslint-disable-next-line
+      console.log('SearchBar submit event'); // eslint-disable-line
     },
     searchBarclear() {
-      console.log('SearchBar clear event'); // eslint-disable-next-line
+      console.log('SearchBar clear event'); // eslint-disable-line
       this.search = '';
     },
     busyChange() {
-      console.log('Busy change'); // eslint-disable-next-line
+      console.log('Busy change'); // eslint-disable-line
     },
   },
   components: {
